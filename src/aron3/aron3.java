@@ -28,7 +28,7 @@ public class aron3 {
     
     
     }    
-    public static void prime(int numm) {                   
+    public static String prime(int numm) {          
         boolean flag = false;
         for(int i = 2; i <= numm/2; ++i)
         {            
@@ -38,10 +38,14 @@ public class aron3 {
                 break;
             }
         }
-        if (!flag)
+        if (!flag) {
             System.out.println(numm + " Prím.");
-        else
+            return numm + " Prím.";
+        }
+        else {
             System.out.println(numm + " Nem Prím.");
+            return numm + " Nem Prím.";
+        }
     }
     
 }
